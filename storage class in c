@@ -74,3 +74,13 @@ printf("%d",add());
 }
 
 
+
+#include <stdio.h>
+
+extern int a=10;	 
+int main()
+{
+	printf("%d", a);
+
+return 0;
+}
