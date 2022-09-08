@@ -1,0 +1,24 @@
+int add(void) {
+   int a=13;
+   auto int b=48;
+return a+b;}
+int main(){
+printf("%d",add());
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    auto j=1;
+    {
+        auto j=2;
+        {
+            auto j=3;
+            printf("%d \n",j);// inside a block 1
+        }
+        printf("%d\n",j);// inside a block 2
+    }
+    printf("%d\n",j);// inside a block 3
+}
