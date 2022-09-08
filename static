@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int stat()
+{
+    static int a;
+    a++;
+    return a;
+    
+}
+int main(){
+    printf("%d\n",stat());
+    printf("%d\n",stat());
+    printf("%d\n",stat());
+    printf("%d\n",stat());
+    printf("%d\n",stat());
+    
+}
